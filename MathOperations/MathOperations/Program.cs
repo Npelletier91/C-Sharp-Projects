@@ -8,6 +8,53 @@ namespace MathOperations
         static void Main()
         {
 
+
+
+
+
+            //----------------------------------------------------------------------------------------------
+            //--------------------------MATH AND COMPARISON OPERATORS ASSIGNMENT----------------------------
+            //----------------------------------------------------------------------------------------------
+
+            Console.WriteLine("Anonymous Income Comparison Program");
+
+            Console.WriteLine("Person 1");
+            Console.WriteLine("Hourly Rate:");
+            string hourlyRate1 = Console.ReadLine();
+            int hourlyRateInt1 = Convert.ToInt32(hourlyRate1);
+
+            Console.WriteLine("Hours worked per week:");
+            string hoursPerWeek1 = Console.ReadLine();
+            int hoursPerWeekInt1 = Convert.ToInt32(hourlyRate1);
+
+            Console.WriteLine("Person 2");
+            Console.WriteLine("Hourly Rate:");
+            string hourlyRate2 = Console.ReadLine();
+            int hourlyRateInt2 = Convert.ToInt32(hourlyRate2);
+
+            Console.WriteLine("Hours worked per week:");
+            string weeksWorked2 = Console.ReadLine();
+            int hoursPerWeekInt2 = Convert.ToInt32(hourlyRate2);
+
+            Console.WriteLine("Annual salary of Person 1:");
+            int person1Salary = hourlyRateInt1 * hoursPerWeekInt1 * 52;
+            Console.WriteLine(person1Salary);
+            Console.ReadLine();
+
+            Console.WriteLine("Annual salary of Person 2:");
+            int person2Salary = hourlyRateInt1 * hoursPerWeekInt2 * 52;
+            Console.WriteLine(person2Salary);
+            Console.ReadLine();
+
+            Console.WriteLine("Does Person 1 make more money than Person 2?");
+            bool trueOrFalse = person1Salary > person2Salary;
+            Console.WriteLine(trueOrFalse);
+            Console.ReadLine();
+
+
+
+
+
             //int num1 = 34;
             //int num2 = 17;
             //int num5 = 5;
@@ -89,53 +136,6 @@ namespace MathOperations
             //int remainder = num5 % 7;
             //Console.WriteLine("The remainder is " + remainder);
             //Console.ReadLine();
-
-
-
-            //----------------------------------------------------------------------------------------------
-            //--------------------------MATH AND COMPARISON OPERATORS ASSIGNMENT----------------------------
-            //----------------------------------------------------------------------------------------------
-
-            Console.WriteLine("Anonymous Income Comparison Program");
-
-            Console.WriteLine("Person 1");
-            Console.WriteLine("Hourly Rate:");
-            string hourlyRate1 = Console.ReadLine();
-            int hourlyRateInt1 = Convert.ToInt32(hourlyRate1);
-
-            Console.WriteLine("Hours worked per week:");
-            string hoursPerWeek1 = Console.ReadLine();
-            int hoursPerWeekInt1 = Convert.ToInt32(hourlyRate1);
-
-            Console.WriteLine("Person 2");
-            Console.WriteLine("Hourly Rate:");
-            string hourlyRate2 = Console.ReadLine();
-            int hourlyRateInt2 = Convert.ToInt32(hourlyRate2);
-
-            Console.WriteLine("Hours worked per week:");
-            string weeksWorked2 = Console.ReadLine();
-            int hoursPerWeekInt2 = Convert.ToInt32(hourlyRate2);
-
-            Console.WriteLine("Annual salary of Person 1:");
-            int person1Salary = hourlyRateInt1 * hoursPerWeekInt1 * 52;
-            Console.WriteLine(person1Salary);
-            Console.ReadLine();
-
-            Console.WriteLine("Annual salary of Person 2:");
-            int person2Salary = hourlyRateInt1 * hoursPerWeekInt2 * 52;
-            Console.WriteLine(person2Salary);
-            Console.ReadLine();
-
-            Console.WriteLine("Does Person 1 make more money than Person 2?");
-            bool trueOrFalse = person1Salary > person2Salary;
-            Console.WriteLine(trueOrFalse);
-            Console.ReadLine();
-
-
-
-
-
-
         }
     }
 }
