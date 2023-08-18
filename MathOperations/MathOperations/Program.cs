@@ -25,7 +25,7 @@ namespace MathOperations
 
             Console.WriteLine("Hours worked per week:");
             string hoursPerWeek1 = Console.ReadLine();
-            int hoursPerWeekInt1 = Convert.ToInt32(hourlyRate1);
+            int hoursPerWeekInt1 = Convert.ToInt32(hoursPerWeek1);
 
             Console.WriteLine("Person 2");
             Console.WriteLine("Hourly Rate:");
@@ -33,8 +33,8 @@ namespace MathOperations
             int hourlyRateInt2 = Convert.ToInt32(hourlyRate2);
 
             Console.WriteLine("Hours worked per week:");
-            string weeksWorked2 = Console.ReadLine();
-            int hoursPerWeekInt2 = Convert.ToInt32(hourlyRate2);
+            string hoursPerWeek2 = Console.ReadLine();
+            int hoursPerWeekInt2 = Convert.ToInt32(hoursPerWeek2);
 
             Console.WriteLine("Annual salary of Person 1:");
             int person1Salary = hourlyRateInt1 * hoursPerWeekInt1 * 52;
@@ -42,7 +42,7 @@ namespace MathOperations
             Console.ReadLine();
 
             Console.WriteLine("Annual salary of Person 2:");
-            int person2Salary = hourlyRateInt1 * hoursPerWeekInt2 * 52;
+            int person2Salary = hourlyRateInt2 * hoursPerWeekInt2 * 52;
             Console.WriteLine(person2Salary);
             Console.ReadLine();
 
