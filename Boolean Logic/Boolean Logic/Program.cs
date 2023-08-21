@@ -24,7 +24,7 @@ namespace Boolean_Logic
             int ticketsInt = Convert.ToInt32(tickets);
 
             bool over15 = ageInt > 15;
-            bool speedingTickets = ticketsInt < 3;
+            bool speedingTickets = ticketsInt <= 3;
 
             Console.WriteLine("Qualified?");
             Console.WriteLine(over15 == true && haveDUIBool != true && speedingTickets == true);
