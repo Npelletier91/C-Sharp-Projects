@@ -10,7 +10,7 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Guess a number?");
+            Console.WriteLine("Guess a number!");
             int number = Convert.ToInt32(Console.ReadLine());
             bool isGuessed = false;
 
@@ -30,8 +30,7 @@ namespace Loops
                         number = Convert.ToInt32(Console.ReadLine());
                         break;
                     case 55:
-                        Console.WriteLine(number + "  is correct!");
-                        number = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(number + "  is correct! Play again?");
                         isGuessed = true;
                         break;
                     default:
@@ -41,7 +40,6 @@ namespace Loops
                         break;
                 }
             }
-            Console.Read();
 
 
 
@@ -51,9 +49,10 @@ namespace Loops
 
 
 
-            Console.WriteLine("Guess a second number?");
+
+            Console.WriteLine("Guess a second number!");
             int number2 = Convert.ToInt32(Console.ReadLine());
-            bool isGuessed2 = false;
+            bool isGuessed2 = number  == 66;
 
             do
             {
@@ -71,7 +70,7 @@ namespace Loops
                         break;
                     case 66:
                         Console.WriteLine("66 is correct!");
-                        number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.ReadLine();
                         isGuessed2 = true;
                         break;
                     default:
@@ -82,9 +81,6 @@ namespace Loops
                 }
             }
             while (!isGuessed2);
-
-            Console.ReadLine();
-
         }
     }
 }
