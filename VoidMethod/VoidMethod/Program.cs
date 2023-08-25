@@ -13,11 +13,8 @@ namespace VoidMethod
             MathOperation math = new MathOperation();
 
             math.operation(6, 7);
-
-            int example1 = 123;
-            int example2 = 456;
-
-            math.operation(example1, example2);
+            math.operation(number1: 231, number2: 654);
+            math.operation(number2: 1000, number1: 5);
 
             Console.ReadLine();
         }
