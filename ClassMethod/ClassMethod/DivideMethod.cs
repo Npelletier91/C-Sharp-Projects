@@ -17,9 +17,6 @@ namespace ClassMethod
             Single result = number1 + number2;
             Console.WriteLine($"{number1} + {number2} = {result}");
         }
-        public static int Subtract(int number1, int number2)
-        {
-            return number1 - number2;
-        }
+
     }
 }

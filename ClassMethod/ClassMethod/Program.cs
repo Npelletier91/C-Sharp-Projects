@@ -35,12 +35,12 @@ namespace ClassMethod
             Console.ReadLine();
 
 
-            Console.WriteLine("Enter one number at a time to subtract them");
+            Console.WriteLine("Enter one number at a time to multiply them");
             int num1 = Convert.ToInt32(Console.ReadLine());
             int num2 = Convert.ToInt32(Console.ReadLine());
 
             //printing the static method to the console without creating an instance of the class "DivideMethod"
-            Console.WriteLine($"{num1} - {num2} = {DivideMethod.Subtract(num1, num2)}");
+            Console.WriteLine($"{num1} * {num2} = {MultiplyOperation.Multiply(num1, num2)}");
             Console.ReadLine();
 
         }
