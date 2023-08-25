@@ -18,12 +18,20 @@ namespace MethodOverloadingOptional
 
             Console.WriteLine("Input another number or simply press enter:");
             string stringInput = Console.ReadLine();
-            int userInput2 = string.IsNullOrEmpty(stringInput) ? 0 : Convert.ToInt32(stringInput);
 
 
-            int result = math.operation(userInput1,userInput2);
+            if (string.IsNullOrEmpty(stringInput))
+            {
+                int result1 = math.operation(userInput1);
+                Console.WriteLine($"{userInput1} + 10 = {result1}");
+            }
+            else
+            {
+                int userInput2 = Convert.ToInt32(stringInput);
+                int result2 = math.operation(userInput1, userInput2);
+                Console.WriteLine($"{userInput1} + {userInput2} = {result2}");
 
-            Console.WriteLine(userInput1 + " + " + userInput2 + " = " + result);
+            }
             Console.ReadLine();
         }
     }

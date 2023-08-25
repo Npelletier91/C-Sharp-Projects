@@ -9,7 +9,11 @@ namespace MethodOverloadingOptional
     public class OperationMethod
     {
         
-        public int operation (int number1, int number2 = 0)
+        public int operation (int number1)
+        {
+            return number1 + 10;
+        }
+        public int operation (int number1 , int number2)
         {
             return number1 + number2;
         }
