@@ -11,8 +11,11 @@ namespace AbstractClass
         static void Main(string[] args)
         {
             Employee employee = new Employee() { FirstName = "Sample", LastName = "Student", ID = 1001 };
-
             employee.SayName();
+
+            IQuittable quittableEmployee = employee;
+            quittableEmployee.Quit();
+
             Console.ReadLine();
 
 
