@@ -20,5 +20,14 @@ namespace AbstractClass
         {
             Console.WriteLine($"{FirstName} {LastName} has quit.");
         }
+
+        public static bool operator ==(Employee employee, Employee employee2)
+        {
+            return employee?.ID == employee2?.ID;  
+        }
+        public static bool operator !=(Employee employee, Employee employee2)
+        {
+            return !(employee == employee2);
+        }
     }
 }
