@@ -6,20 +6,33 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    public class Employee<T> : Person, IQuittable
+    public class Employee : Person, IQuittable
     {
         public override void SayName()
         {
-            base.SayName();
+            Console.WriteLine($"Name: {FirstName} {LastName}");
             Console.WriteLine($"ID: {ID}");
         }
-        public List<T> things { get; set; }
-        public int ID { get; set; }
-        
+
         public void Quit()
         {
             Console.WriteLine($"{FirstName} {LastName} has quit.");
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //public List<T> things { get; set; }
+        //public int ID { get; set; }
 
         //public static bool operator ==(Employee employee, Employee employee2)
         //{

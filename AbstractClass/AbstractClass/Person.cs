@@ -13,7 +13,7 @@ namespace AbstractClass
         public int ID { get; set; }
         public virtual void SayName()
         {
-            Console.WriteLine($"Name: {FirstName} {LastName}");
+
         }
 
     }
